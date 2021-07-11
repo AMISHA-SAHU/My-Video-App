@@ -3,7 +3,7 @@ const socket = require("socket.io");
 const app = express();
 
 
-let server = app.liste((process.env.PORT||7000), function () {
+let server = app.listen((process.env.PORT||7000), function () {
   console.log("Server is running");
 });
 
